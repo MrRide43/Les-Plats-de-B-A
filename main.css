@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserra', sans-serif ;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+/* css du menu navigation */
+/* css du menu navigation */
+header {
+    background-color: #7C8D89;
+    color: white;
+    width: 100%;
+    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+}
+
+header img {
+    width: 8em;
+    height: 8em;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7C8D89; /* Couleur de fond pour la navigation */
+    position: fixed; /* Fixer la navigation */
+    top: 0;
+    width: 100%; /* S'assurer qu'elle prend toute la largeur */
+    z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+}
+
+/* fin du CSS de la navigation*/
+
+/* css du premier bloc navigation "A propos", "Nos formules" "nos partenaires" "Contact" */
+.nav_barre {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_barre a {
+    margin: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* fin de css du premier bloc de navigation*/
+
+/*Début du CSS pour la partie "Connexion, Inscription"*/
+.abonnement {
+    display: flex;
+    align-items: center;
+}
+
+.abonnement img {
+    width: 2em;
+    height: 2em;
+    margin: 10px;
+}
+
+.abonnement a {
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.abonnement a:hover {
+    text-decoration: underline;
+}
+
+.box_inscription {
+    border: 2px solid #4F5E65;
+    border-radius: 15px;
+    background-color: #4F5E65;
+    padding: 5px 15px 5px 15px;
+}
+/* Fin du CSS pour la partie "Connexion, Inscription"*/
+
+/* Ajouter un peu de marge au contenu pour qu'il ne soit pas caché par la navigation fixée */
+body {
+    margin-top: 150px; /* Ajustez cette valeur en fonction de la hauteur de votre navigation */
+}
+/* Fin du CSS pour la partie "Connexion, Inscription"*/
+
+ /*Partie Footer*/
+
+ footer {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #7C8D89;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding-top: 2em;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+li a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+
+.image_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.logoFooter {
+    height: 9em;
+    width: 9em;
+}
+
+/*Fin footer*/

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les Plats de Bea</title>
+  <link rel="stylesheet" href="page_paiement.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="script.js"></script>
+  <!--lien de la police 'poppins' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Poppins : poids@900 & display=swap" rel="stylesheet">
+  <!--lien de la police 'lato regular' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= Lato &famille= Poppins : poids@700 & display=swap" rel="stylesheet" >
+  <!--lien de la police 'montserra'-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Montserrat &@ 700 & display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Début du eader avec la nav barre-->
+
+    <header>
+
+        <nav>
+
+            <a href="page_principal.html"><img src="image/logo_les_plats_bea1.png" alt="Logo"></a>
+
+            <ul class="nav_barre">
+                <li><a href="page_principal.html"> A propos</a></li> <!-- utiliser des <li> -->
+                <li><a href="page_choix_formule.html">Nos formules</a></li>
+                <li><a href="page_partenaire.html">Nos partenaires</a></li>
+                <li><a href="formulaire_Contact.html">Contact</a></li>            
+            </ul>
+
+            <div class="abonnement">
+            <img src="image/profil.png" alt="profil">
+            <img src="image/panier_2.png" alt="panier">
+            </div>
+        </nav>
+
+    </header>
+
+<!--fin du Header avec la nav barre -->
+
+<!--section titre-->
+<main>
+    <section>
+        <div>
+            <h1>Je finalise ma commande</h1>
+        </div>
+    </section>
+
+<!--fin de section Titre-->
+
+<!--section trait "d'avancé de commande"-->
+
+    <section>
+
+        <div class="trait">
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+            <div class="point"></div>
+        </div>
+    
+        <div class="textePoint">
+            <p>Je choisie ma formule</p>
+            <p>Je choisie mes plats <br/> + ma livraison</p>
+            <p>Confirmation de commande</p>
+        </div>
+    
+    </section>
+    
+<!--fin de section "trait d'avancé de commande"-->
+
+<!-- Début section tableau à remplir par l'utilisateur-->
+
+    <section class="tableauFacture">
+
+        <div class="titreTableau">
+            <h2>Mon adresse de livraion</h2>
+        </div>
+
+        <form method="get" action="" class="tableauAdresse">
+
+            <div class="premierePartie">
+                <div class="zoneInput">
+                    <input class="testTableau" type="text" name="prenom" placeholder="Prenom">
+                    <input class="testTableau" type="text" name="nom" placeholder="Nom">
+                </div>
+                <input type="text" name="Societé" placeholder="Societé">
+                <input type="tel" name="telephone" placeholder="Téléphone">
+                <input type="tel" name="telephone" placeholder="Portable">
+            </div>
+            <div class="deuxiemePartie">
+                <input type="text" name="adresse" placeholder="Mon adresse">
+                <input type="text" name="adresse" placeholder="Complément d'adresse">
+                <div class="zoneInput">
+                    <input class="coupureTableau" type="text" name="commandePostal" placeholder="Code postal">
+                    <select id="Ville" class="coupureTableau" >
+                        <option value="Ville">Ville</option>
+                        <option value="Valence">Valence</option>
+                    </select>
+                </div>
+                <input type="text" name="ComplémentAdresse" placeholder="Complément d'adresse">
+            </div>
+
+        </form>
+        
+    </section>
+
+
+<!-- Fin section tableau à remplir par l'utilisateur-->
+
+<!-- Début section bouton de choix à cocher-->
+
+        <section class="zoneAcocher">
+
+            <form>
+
+                <div>
+                    <input type="checkbox" id="caseCondition" name="caseACocher" value="valeurCheckbox">
+                    <label for="caseCondition">Utiliser cette adresse pour votre livraison</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="caseCondition2" name="caseACocher" value="valeurCheckbox">
+                    <label for="caseCondition2">Utiliser une autre adresse pour votre livraison</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="caseCondition3" name="caseACocher" value="valeurCheckbox">
+                    <label for="caseCondition3">J'autorise l'utilisation de ces informations dans le cadre de ma commande</label>
+                </div>
+
+            </form>
+
+        </section>
+
+<!-- Fin section bouton de choix à cocher-->
+
+<!--Début section de la zone "suivant & retour"-->
+
+        <section class="zoneSuivant">
+
+            <a href="" class="boutonContinuer">CONTINUER</a><br/>
+            <a href="page_finalisation.html" class="boutonRetour">RETOUR</a>
+
+        </section>
+
+<!--Fin section de la zone "suivant & retour"-->
+
+
+
+</main>
+
+<!--Partie Footer-->
+
+    <footer>
+
+        <a href="page_principal.html"><img  src="image/logoBlanc_sansFond.png" alt="logo" class="logoFooter"></a>
+
+        <div>
+            <h3>Le concept</h3>
+            <ul>
+                <li><a href="page_choix_formule.html">Formule</a></li>
+                <li><a href="page_creationCompte.html">Se connecter</a></li>
+                <li><a>Cookies</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Découvrez</h3>
+            <ul>
+                <li><a href="page_principal.html#propos">A propos</a></li>
+                <li><a href="page_partenaire.html">Nos partenaires</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Nous contacter</h3>
+            <ul>
+                <li>contact@lesplatsdebea.fr</li>
+                <li>12345678</li>
+            </ul>
+        </div>
+
+        <div class="image_footer"> 
+            <img src="image/facebook-footer.png" alt="facebook">
+            <img src="image/instagram_footer.png" alt="intragam">
+            <img src="image/youtube_footer.png" alt="youtube">
+        </div>
+
+    </footer>
+    
+</body>

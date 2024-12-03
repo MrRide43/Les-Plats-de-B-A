@@ -1,0 +1,332 @@
+/*Début de la partie sur les sections: 1e section*/
+
+.image_presentation{
+    width: 20em;
+    height: 20em;
+    margin: auto;
+}
+
+.cuisto_de_la_drome h1{
+    font-size: 3em;
+    font-family : 'Poppins' , sans-serif ;    
+    color: #4F5E65;
+}
+.image_casserol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bouton a{
+    border: 2px solid #D8C0BC;
+    border-radius: 30px;
+    background-color: #D8C0BC;
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+}
+
+.bouton a:hover{
+    text-decoration: underline;
+}
+
+/* fin de CSS pour la 1e section des parties section */
+
+/*Début CSS pour la 2e section 'texte de présentation'*/
+
+.section_presentation{
+    width: 60%;
+}
+
+.texte_presentation{
+    margin-top: 8em;
+    margin-left: 9em;
+    color: #7C8D89;
+    line-height: 2;
+    font-size: 1.3em;
+}
+
+.texte_presentation p{
+    margin-bottom: 2em;
+}
+
+/*Fin CSS pour la 2e section 'texte de presentation'*/
+
+/*Début CSS pour la partie 'aside'*/
+
+aside{
+    width: 40%;
+    position: relative;
+    transform: translate(140%, -55%);
+}
+
+.bloc_formule{
+    border: 2px solid #C2CFCB;
+    background-color: #C2CFCB;
+    color: #4F5E65;
+    width: 30%;
+    margin: auto;
+    padding: 4%;
+    border-radius: 40px 40px 0px 0px;
+    align-items: center;
+}
+
+.fleche_droite_1{
+    border: 10px solid #4F5E65;
+    clip-path: polygon(48% 0, 100% 47%, 49% 100%, 49% 87%, 86% 47%, 48% 12%);
+    width: 1%;
+    height: 1%;
+    border-radius: 100px;
+    margin-left: 10px;
+}
+
+.formules_1 h3{
+    display: flex;
+    flex-direction: row;
+}
+
+.formules_2 h3{
+    display: flex;
+    flex-direction: row;
+}
+
+.formules_3 h3{
+    display: flex;
+    flex-direction: row;
+}
+
+/*fin du CSS de la partie 'aside' */
+
+/*Début du CSS sur la partie 'comment ca marche'*/
+
+.comment_sa_marche{
+    border: 2px solid #4F5E65;
+    border-radius: 70px;
+    background-color: #4F5E65;
+    color: white;
+    padding: 3% 3% 5% 3%;
+    width: 75%;
+    position: relative;
+    transform: translate(9%, -52% );
+}
+
+.comment_sa_marche h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.marche_a_suivre{
+    display: flex;
+    justify-content: space-around;
+}
+
+.bloc_casserole img{
+    position: relative;
+    transform: translate(80%);
+}
+
+.bloc_livraison img{
+    position: relative;
+    transform: translate(220%);
+}
+
+.choix_formule img{
+    position: relative;
+    transform: translate(130%);
+}
+
+.fleche_1 {
+    border: 10px solid white;
+    clip-path: polygon(48% 0, 100% 47%, 49% 100%, 49% 87%, 86% 47%, 48% 12%);
+    border-radius: 100px;
+    height: 15px;
+    position: relative;
+    transform: translate(0%, 80%);
+}
+
+.fleche_2{
+    border: 10px solid white;
+    clip-path: polygon(48% 0, 100% 47%, 49% 100%, 49% 87%, 86% 47%, 48% 12%);
+    border-radius: 100px;
+    height: 15px;
+    position: relative;
+    transform: translate(0%, 80%);
+}
+
+/*Fin du CSS sur la section "comment sa marche"*/
+
+/*Début du CSS sur la section "comparaison de plat"*/
+
+.exemple_plat {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2;
+    color: #7C8D89;
+    margin: 30px;
+
+}
+.exemple_plat h2 {
+    color: #4F5E65;
+}
+
+.sans_BEA, .avec_BEA {
+    text-align: center;
+}
+
+.temp_passe_1, .temp_passe_2 {
+    border: 1px solid #4F5E65;
+    color: white;
+    font-size: 1.4em;
+    background-color: #4F5E65;
+    border-radius: 20px;
+    padding: 8px;
+    text-align: center;
+}
+
+.image_sans_bea {
+    width: 380px;
+    height: auto;
+}
+
+.image_avec_bea {
+    height: auto;
+}
+
+.bloc_nos_formule {
+    border: 1px solid #D8C0BC;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #D8C0BC;
+    color: white;
+    text-align: center;
+    width: 170px;
+    float: right;
+}
+
+.bloc_nos_formule a{
+    text-decoration: none;
+    color: white;
+}
+
+.bloc_nos_formule a:hover{
+    text-decoration: underline;
+}
+
+/*Fin du CSS "comparaison de plat"*/
+
+/*Début de la partie secion exemple de plat*/
+
+.containeur_exemplePlat{
+    display: flex;
+    justify-content: space-around;   
+    width: 100%; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+.exemple_photo{
+    position: relative;
+    width: 50%;
+    height: 40%;
+}
+
+figure img {
+    width: 60%;
+    height: 50%;
+    border: 8px solid white;
+}
+
+.fig1 {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+}
+
+.fig2 {
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+.fig3 {
+    position: absolute;
+    top: 130px;
+    left: 400px;
+    z-index: 4;
+}
+
+.fig4 {
+    position: absolute;
+    left: 250px;
+}
+
+.texte_presentation2 {
+    float: right;
+    width: 40%;
+    color: #7C8D89;
+    line-height: 2;
+    font-size: 1.3em;
+}
+
+/*fin de la section exemple de la plats*/
+
+/*Début de la partie commantaire*/
+
+.commantaires {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+}
+
+.texteCommantaire {
+    color: #7C8D89;
+    font-size: 1.3em;
+    line-height: 2.2;
+    width: 50%;
+    margin-top: 3em;
+}
+
+.imageCommentaire {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCommentaire img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 10px solid #D8C0BC;
+}
+
+.bloc_nos_formule2 {
+    border: 1px solid #D8C0BC;
+    margin: 3em;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: #D8C0BC;
+    color: white;
+    text-align: center;
+    width: 170px;
+    float: right;
+}
+
+.bloc_nos_formule2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.bloc_nos_formule2 a:hover{
+    text-decoration: underline;
+}
+
+ /* fin de la section commantaires*/

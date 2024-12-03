@@ -1,0 +1,265 @@
+h1{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+    color: #7c8d89;
+    text-transform: uppercase;
+}
+
+/*Début de la section sur le trait "d'avancé de commande"*/
+
+.trait{
+    position: relative;
+    border: 0.1em solid #4F5E65 ;    
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 2px; /* Ajout d'une hauteur fixe */
+}
+
+/* Partie du trait entre les deux premiers points */
+.trait-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* La même hauteur que le trait initial */
+    width: 63%;
+    background-color: #4F5E65; /* Couleur de changement pour la section active */
+    z-index: 1; /* Assurez-vous qu'il est au-dessus du trait initial */
+}
+
+.point {
+    position: absolute;
+    width: 15px; /* Taille du point */
+    height: 15px;
+    background-color: #4F5E65; /* Couleur du point */
+    border-radius: 50%; /* Forme du point */
+    top: -7px; /* Ajustement de la position verticale */
+    z-index: 2; /* Assurez-vous que les points sont au-dessus des traits */
+}
+
+/* Styles pour les points actifs */
+.point.active {
+    background-color: #4F5E65; /* Couleur de changement */
+}
+
+.point:nth-child(2) {
+    left: -0.2%;
+}
+
+.point:nth-child(3) {
+    left: 32%;
+}
+
+.point:nth-child(4) {
+    left: 63%;
+}
+
+.point:nth-child(5) {
+    left: 100%;
+}
+
+/* Styles pour le texte actif */
+.textePoint .text-part.active {
+    color: #4F5E65; /* Couleur de changement */
+}
+
+.textePoint{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    color: #debbb8;
+    margin: 0 auto;
+}
+
+/*Fin de la section sur le trait "d'avancé de commande"*/
+
+/*Début de la section sur préférences des aliment dans les plats*/
+
+.choixAliment {
+    width: 75%;
+    align-items: center;
+    margin: 0 auto;
+    color: #4F5E65;
+}
+
+.choixAliment h3 {
+    margin: 2em;
+}
+
+.imageAliment {
+    width: 57%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.imageAliment img {
+    width: 3em;
+    height: 3em;
+    color: #4F5E65;
+}
+
+.imageAliment div {
+    margin: 0.9em;
+    padding: 2em; /* Add padding for better look */
+    width: 6em; /* Fixed width */
+    height: 7.7em; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+.selected {
+    border: 3px solid #4F5E65; /* Changez la couleur selon vos préférences */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*fin de la section sur préférences des aliment dans les plats*/
+
+/*Début de la section sur le choix des plats*/
+
+.nombrePlat {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.blocPlat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trois colonnes de largeur égale */
+    gap: 8em; /* Espace entre les blocs */
+    row-gap: 5em; /*espace modifié verticalement*/
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.selectionPlats {
+    background-color: #7c8d89;
+    color: white;
+    border: 1px solid #7c8d89;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 18em;
+    min-height: 20em; /* Hauteur minimale */
+}
+
+.selectionPlats img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.basBlocPlat {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.basBlocPlat img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.rond {
+    clip-path: circle(50% at 50% 50%);
+    color: #7c8d89;
+    background-color: white;
+    padding: 24px 27px 22px 27px;
+    font-size: 1em;
+}
+
+/*fin de la section sur le choix des plats*/
+
+/*Début de la dernière section confirmation des choix*/
+
+.boutonConfirmation {
+    width: 50%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.boutonConfirmation a {
+    float: right;
+    color: #debbb8;
+    margin: 2em;
+    text-decoration: none;
+}
+
+.boutonConfirmation a:hover {
+    text-decoration: underline;
+}
+
+.zoneBouton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ZoneNombrePlat {
+    border: 1px solid #7c8d89;
+    background-color: #7c8d89;
+    border-radius: 30px;
+    color: white;
+    padding: 15px 25px 15px 25px;
+    font-size: large;
+}
+
+.zoneConfirmation a { 
+    border: 1px solid #debbb8;
+    background-color: #debbb8;
+    color: white;
+    padding: 15px 25px 15px 25px;
+    font-size: large;
+    border-radius: 30px;
+}
+
+/*fin de la dernière section confirmation des choix*/
+
+/*Zone message d'erreurs*/
+
+/* CSS pour le fond opaque */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* CSS pour le message d'erreur */
+
+.error-message {
+    background: #7C8D89;
+    border-radius: 25px;
+    padding: 50px;
+    color: white; /* Couleur du texte */
+    font-size: 1.5em; /* Taille du texte */
+    text-align: center;
+    max-width: 400px;
+    width: 80%; /* Vous pouvez ajuster cette largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}

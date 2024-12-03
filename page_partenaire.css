@@ -1,0 +1,86 @@
+/*Zone titre*/
+
+h1{
+    text-align: center;
+    color:#7C8D89;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+/*Fin Zone titre*/
+
+/* Début de la Partie Zone Partenaire*/
+
+.zonePartenaire {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+
+.redimensionsPartenaire {
+    width: 25em;
+    height: 23em;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.blocPartenaire {
+    width: 25em;
+    margin: 3em;
+    background-color: #7C8D89;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blocPartenaire p {
+    width: 22em;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 4em;
+
+}
+
+h2 {
+    margin: auto;
+    padding-bottom: 1.5em;
+    padding-top: 1em;
+}
+
+/* fin de la Partie Zone Partenaire*/
+
+.zoneBouton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.zoneBouton a:hover {
+    text-decoration: underline;
+}
+.boutonFormles {
+    border: 1px solid #DEBBB8;
+    background-color: #DEBBB8;
+    color: white;
+    border-radius: 25px;
+    padding: 1em 1.4em 1em 1.4em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.boutonRetour {
+    color: #DEBBB8;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.boutonRetour:hover {
+    text-decoration: underline;
+}
+/* Début de la Zone bouton*/
+

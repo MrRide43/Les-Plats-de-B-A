@@ -1,0 +1,194 @@
+h1{
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: 2em;
+    color: #7c8d89;
+    text-transform: uppercase;
+}
+
+/*Début de la section sur le trait "d'avancé de commande"*/
+
+.trait{
+    position: relative;
+    border: 0.1em solid #4F5E65 ;    
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 2px; /* Ajout d'une hauteur fixe */
+}
+
+.trait-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* La même hauteur que le trait initial */
+    width: 100%;
+    background-color: #4F5E65; /* Couleur de changement pour la section active */
+    z-index: 1; /* Assurez-vous qu'il est au-dessus du trait initial */
+}
+
+.point {
+    position: absolute;
+    width: 15px; /* Taille du point */
+    height: 15px;
+    background-color: #4F5E65; /* Couleur du point */
+    border-radius: 50%; /* Forme du point */
+    top: -7px; /* Ajustement de la position verticale */
+    z-index: 2; /* Assurez-vous que les points sont au-dessus des traits */
+}
+
+/* Styles pour les points actifs */
+.point.active {
+    background-color: #4F5E65; /* Couleur de changement */
+}
+
+.point:nth-child(2) {
+    left: -0.2%;
+}
+
+.point:nth-child(3) {
+    left: 32%;
+}
+
+.point:nth-child(4) {
+    left: 63%;
+}
+
+.point:nth-child(5) {
+    left: 100%;
+}
+
+/* Styles pour le texte actif */
+.textePoint .text-part.active {
+    color: #4F5E65; /* Couleur de changement */
+}
+
+.textePoint{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    color: #debbb8;
+    margin: 0 auto;
+    padding: 1em 0em;
+}
+
+/*Fin de la section sur le trait "d'avancé de commande"*/
+
+/*Début partie sur les classe qui servent à plusieurs zone de la page*/
+
+.info_commande {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.zoneTotal {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #4F5E65;
+    background-color: #4F5E65;
+    color: white;
+    text-align: center;
+}
+
+.zoneModif {
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.zoneModif a {
+    float: right;
+    text-decoration: none;
+    border: 1px solid #debbb8;
+    border-radius: 20px;
+    background-color: #debbb8;
+    color: white;
+    padding: 10px 15px 10px 15px;
+}
+
+.zoneModif a:hover {
+    text-decoration: underline;
+}
+
+.titreModif {
+    width: 50%;
+    color: #7c8d89;
+    font-size: 1.5em;
+}
+
+.zoneInfoUtilisateur {
+    border: 1px solid #F3F4F4;
+    background-color: #F3F4F4;
+    color: #4F5E65;
+    margin-bottom: 1.5em;
+    padding: 1em;
+}
+
+.zoneInfoUtilisateur p {
+    margin-left: 1.5em;
+}
+
+/*fin partie sur les classe qui servent à plusieurs zone de la page*/
+
+/*Début de la section pour les dates de livraison*/
+
+.titreLivraison {
+    color: #7c8d89;
+    font-size: 1.8em;
+}
+
+.zoneDate {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.zoneBlocDate {
+    border: 1px solid #F3F4F4;
+    background-color: #F3F4F4;
+    color: #4F5E65;
+    font-size: larger;
+    padding: 0.6em 1.7em 2em 1.7em;
+}
+
+/*fin de la section pour les dates de livraison*/
+
+/*Début de la section pour le mode de paiement*/
+
+.blocPaiement {
+    border: 1px solid #F3F4F4;
+    background-color: #F3F4F4;
+    color: #4F5E65;
+    padding: 1.8em;
+    margin: 1em 0em 1.5em 0em;
+    font-weight:bold ;
+}
+
+.conditionGeneral {
+    float: right;
+    text-align: right;
+    line-height: 4em;
+}
+
+.conditionGeneral label {
+    text-decoration: underline;
+    color: #4F5E65;
+}
+
+.boutonRetour {
+    color: #debbb8;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.borderPaiement {
+    border: 1px solid #debbb8;
+    border-radius: 20px;
+    background-color: #debbb8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}

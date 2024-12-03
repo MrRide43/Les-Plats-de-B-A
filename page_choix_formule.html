@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les Plats de Bea</title>
+  <link rel="stylesheet" href="page_choix_formule.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="script.js"></script>
+  <!--lien de la police 'poppins' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Poppins : poids@900 & display=swap" rel="stylesheet">
+  <!--lien de la police 'lato regular' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= Lato &famille= Poppins : poids@700 & display=swap" rel="stylesheet" >
+  <!--lien de la police 'montserra'-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Montserrat &@ 700 & display=swap" rel="stylesheet">
+</head>
+
+<body data-page="1">
+
+  <!--Début du eader avec la nav barre-->
+
+    <header>
+
+      <nav>
+          <a href="page_principal.html"><img src="image/logo_les_plats_bea1.png" alt="Logo"></a>
+      
+            <ul class="nav_barre">
+              <li><a href="page_principal.html"> A propos</a></li> <!-- utiliser des <li> -->
+              <li><a href="page_choix_formule.html">Nos formules</a></li>
+              <li><a href="page_partenaire.html">Nos partenaires</a></li>
+              <li><a href="formulaire_Contact.html">Contact</a></li>
+            </ul>
+      
+          <div class="abonnement">
+            <img src="image/profil.png" alt="profil">
+            <img src="image/panier_2.png" alt="panier">
+          </div>
+      </nav>
+
+    </header>
+
+  <!--fin du Header avec la nav barre -->
+
+  <!--section titre-->
+
+    <section>
+      <div>
+        <h1>Je choisi ma formule</h1>
+      </div>
+    </section>
+
+  <!--fin de section Titre-->
+
+  <!--section trait "d'avancé de commande"-->
+
+    <section>
+
+      <div class="trait">
+        <div class="trait-active"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+        <div class="point"></div>
+      </div>
+      
+      <div class="textePoint">
+        <p class="text-part">Je choisis ma formule</p>
+        <p>Je choisis mes plats <br/> + ma livraison</p>
+        <p>Confirmation de commande</p>
+      </div>
+
+    </section>
+
+  <!--fin de section "trait d'avancé de commande"-->
+
+  <!--Début de la section sur le choix du nombre de plat-->
+
+    <section class="choixNombreRepas">
+
+      <div class="nombreRepas" data-repas="5">
+        <h2>5</h2>
+        <p>repas par semaine</p>
+        <p>7,50 / plat <br/> 37,50€</p>
+      </div>
+
+      <div class="nombreRepas" data-repas="10">
+        <h2>10</h2>
+        <p>repas par semaine</p>
+        <p>7,50 / plat <br/>soit 75€</p>
+      </div>
+
+      <div class="nombreRepas" data-repas="15">
+        <h2>15</h2>
+        <p>repas par semaine</p>
+        <p>7,50 / plat 1 plat <br/><strong>Offert</strong> soit 98€ </p>
+      </div>
+
+      <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+            let selectedRepas = null;
+
+            document.querySelectorAll('.nombreRepas').forEach(div => {
+                div.addEventListener('click', () => {
+                    selectedRepas = div.getAttribute('data-repas');
+                    localStorage.setItem('maxPlats', selectedRepas);
+                });
+            });
+
+            document.getElementById('choisirPlats').addEventListener('click', (event) => {
+                if (!selectedRepas) {
+                    event.preventDefault();
+                    document.getElementById('errorOverlay').style.display = 'flex';
+                    setTimeout(() => {
+                        document.getElementById('errorOverlay').style.display = 'none';
+                    }, 3000);
+                }
+            });
+        });
+
+      </script>
+
+    </section>
+
+  <!--fin de la section sur le choix du nombre de plat-->
+
+  <!--Début de la section sur le choix des plats-->
+
+    <section class="choixPlat">
+      
+      <div class="blocChoixPlat">
+        <a id="choisirPlats" href="page_choix_produit.html" >Je choisie mes plats</a>
+      </div>
+
+      <a class="boutonRetour" href="page_principal.html">RETOUR</a>
+
+    </section>
+  
+  <!--fin de la section sur le choix des plats-->
+
+  <!--Zone gestion du message d'erreur-->
+
+  <div id="errorOverlay" class="error-overlay">
+    <div class="error-message">
+        <p>Oups veuillez choisir une formule avant de continuer.</p>
+    </div>
+  </div>
+    
+  <!--Zone gestion du message d'erreur-->
+
+  <!--Partie Footer-->
+
+    <footer>
+
+      <a href="page_principal.html"><img src="image/logoBlanc_sansFond.png" alt="logo" class="logoFooter"></a>
+
+      <div>
+          <h3>Le concept</h3>
+          <ul>
+              <li><a href="page_choix_formule.html">Formule</a></li>
+              <li><a href="page_creationCompte.html">Se connecter</a></li>
+              <li><a href="">Cookies</a></li>
+          </ul>
+      </div>
+  
+      <div>
+          <h3>Découvrez</h3>
+          <ul>
+              <li><a href="page_principal.html#propos">A propos</a></li>
+              <li><a href="page_partenaire.html">Nos partenaires</a></li>
+          </ul>
+      </div>
+  
+      <div>
+          <h3>Nous contacter</h3>
+          <li>
+              <ul>contact@lesplatsdebea.fr</ul>
+              <ul>12345678</ul>
+          </li>
+      </div>
+  
+      <div class="image_footer"> 
+          <img src="image/facebook-footer.png" alt="facebook">
+          <img src="image/instagram_footer.png" alt="intragam">
+          <img src="image/youtube_footer.png" alt="youtube">
+      </div>
+
+    </footer>
+</body>

@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Les Plats de Bea</title>
+  <link rel="stylesheet" href="page_creationCompte.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="test.py"></script>
+  <!--lien de la police 'poppins' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Poppins : poids@900 & display=swap" rel="stylesheet">
+  <!--lien de la police 'lato regular' -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= Lato &famille= Poppins : poids@700 & display=swap" rel="stylesheet" >
+  <!--lien de la police 'montserra'-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https : //fonts.googleapis.com/css2?family= famille= Montserrat &@ 700 & display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!--Début du HTML sur la partie navigation-->
+
+    <header>
+
+        <nav>
+
+            <a href="page_principal.html"><img src="image/logo_les_plats_bea1.png" alt="Logo"></a>
+
+            <ul class="nav_barre">
+                <li><a href="page_principal.html"> A propos</a></li> <!-- utiliser des <li> -->
+                <li><a href="page_choix_formule.html">Nos formules</a></li>
+                <li><a href="page_partenaire.html">Nos partenaires</a></li>
+                <li><a href="formulaire_Contact.html">Contact</a></li>
+            </ul>
+
+            <div class="abonnement">
+            <a href="page_creationCompte.html">Connexion</a>
+            <a class="box_inscription" href="page_creationCompte.html">Inscription</a>
+            <img src="image/panier_2.png" alt="panier">
+            </div>
+        </nav>
+
+    </header>
+
+<!--Fin du HTML sur la partie navigation-->
+
+<!--section titre-->
+
+    <section>
+        <div>
+        <h1>Création de Compte</h1>
+        </div>
+    </section>
+
+<!--fin de section Titre-->
+
+<!--Début de la 1e partie  tableau d'inscription-->
+
+    <section class="tableauCreation">
+    
+        <div class="creationCompte">
+            <h2>Je crée mon compte</h2>
+
+            <form method="get" class="partieInscription">
+                <input type="text" name="prenom" placeholder=" Mon prenom">
+                <input type="email" name="mail" placeholder="E-mail">
+                <input type="password" name="password" placeholder="Choisir un mot de passe">
+                <p>Au moin 6 caractère</p>
+                <input type="password" name="ConfirmationPassword" placeholder="Confirmation mot de passe">
+                
+                <div>
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">J'autorise l'utilisation de ces informations 
+                        dans le cadre de la création de mon compte client
+                    </label>
+                </div>
+
+            </form>
+
+            <div class="boutonInscription">
+                <a href="page_principal.html">Je m'inscris</a>
+            </div>
+
+        </div>
+    
+<!--Fin de la 1e partie tableau d'inscription-->
+
+<!--Début de la 2e partie  tableau d'inscription-->
+
+        <div class="ConnexionCompte">
+            <h2>Je me connecte</h2>
+
+            <form method="get" class="partieConnexion">
+                <input type="email" name="mail" placeholder="E-mail">
+                <input type="password" name="password" placeholder="Mot de passe">
+            </form>
+
+            <div class="boutonConnexion">
+                <a>Je me connecte</a>
+            </div>
+
+            <div class="MotdepasseConnexion">
+                <a>Mot de passe oublié</a>
+            </div>
+
+            <a href="page_principal.html" class="RetourConnexion">Retour</a>
+
+        </div>
+
+    </section>
+
+<!--Fin de la 2e partie  tableau d'inscription-->
+
+<!--Partie Footer-->
+
+  <footer>
+
+    <a href="page_principal.html"><img  src="image/logoBlanc_sansFond.png" alt="logo" class="logoFooter"></a>
+
+    <div>
+        <h3>Le concept</h3>
+        <ul>
+            <li><a href="page_choix_formule.html">Formule</a></li>
+            <li><a href="page_creationCompte.html">Se connecter</a></li>
+            <li><a>Cookies</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Découvrez</h3>
+        <ul>
+            <li><a href="page_principal.html#propos">A propos</a></li>
+            <li><a href="page_partenaire.html">Nos partenaires</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <h3>Nous contacter</h3>
+        <ul>
+            <li>contact@lesplatsdebea.fr</li>
+            <li>12345678</li>
+        </ul>
+    </div>
+
+    <div class="image_footer"> 
+        <img src="image/facebook-footer.png" alt="facebook">
+        <img src="image/instagram_footer.png" alt="intragam">
+        <img src="image/youtube_footer.png" alt="youtube">
+    </div>
+
+  </footer>
+
+</body>
+

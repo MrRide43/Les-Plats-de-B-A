@@ -1,0 +1,177 @@
+h1{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 2em;
+    color: #7c8d89;
+    text-transform: uppercase;
+}
+
+/*Début de la section sur le trait "d'avancé de commande"*/
+
+.trait {
+    position: relative;
+    border: 0.1em solid #4F5E65;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 70%;
+    height: 2px; /* Ajout d'une hauteur fixe */
+}
+
+/* Partie du trait entre les deux premiers points */
+.trait-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* La même hauteur que le trait initial */
+    width: 32%;
+    background-color: #4F5E65; /* Couleur de changement pour la section active */
+    z-index: 1; /* Assurez-vous qu'il est au-dessus du trait initial */
+}
+
+.point {
+    position: absolute;
+    width: 15px; /* Taille du point */
+    height: 15px;
+    background-color: #4F5E65; /* Couleur du point */
+    border-radius: 50%; /* Forme du point */
+    top: -7px; /* Ajustement de la position verticale */
+    z-index: 2; /* Assurez-vous que les points sont au-dessus des traits */
+}
+
+/* Styles pour les points actifs */
+.point.active {
+    background-color: #4F5E65; /* Couleur de changement */
+}
+
+.point:nth-child(2) {
+    left: -0.2%;
+}
+
+.point:nth-child(3) {
+    left: 32%;
+}
+
+.point:nth-child(4) {
+    left: 63%;
+}
+
+.point:nth-child(5) {
+    left: 100%;
+}
+
+/* Styles pour le texte actif */
+.textePoint .text-part.active {
+    color: #4F5E65; /* Couleur de changement */
+}
+
+.textePoint{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    color: #debbb8;
+    margin: 0 auto;
+}
+
+/*Fin de la section sur le trait "d'avancé de commande"*/
+
+/*Partie CSS sur la section les choix du nombre de repas */
+
+.choixNombreRepas{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5em;
+}
+
+.choixNombreRepas div{
+    margin: 1.6em;
+}
+
+.nombreRepas{
+    padding: 25px;
+    border: 1px solid #F3F4F4;
+    background-color: #F3F4F4;
+    border-radius: 30px;
+    color: #4F5E65;
+    cursor: pointer; /*curseur pour indiquer que c'est cliquable*/
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; /* Ajoute une transition pour le changement de taille et de couleur */
+}
+
+.nombreRepas h2{
+    font-size: 5em;
+    margin: 0;
+}
+
+/* Styles pour le bloc actif */
+.nombreRepas.active {
+    background-color: #4F5E65; /* Changer la couleur de fond */
+    color: #fff; /* Changer la couleur du texte */
+    transform: scale(1.2);
+}
+
+/*Fin de la Partie CSS sur la section les choix du nombre de repas */
+
+/*Début de la section sur le choix des plats*/
+
+.choixPlat{
+    text-align: center;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.blocChoixPlat{
+    border: 1px solid #debbb8;
+    border-radius: 30px;
+    background-color: #debbb8;
+    padding: 20px;
+    margin: 20px;
+}
+
+.blocChoixPlat a{
+    text-decoration: none;
+    color: white;
+}
+
+.blocChoixPlat a:hover{
+    text-decoration: underline;
+}
+
+.boutonRetour{
+    text-decoration: none;
+    color: #debbb8;
+}
+/*fin de la section sur le choix des plats*/
+
+/*Zone message d'erreurs*/
+
+/* Styles for error overlay */
+.error-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.error-message {
+    background: #7C8D89;
+    border-radius: 25px;
+    padding: 50px;
+    color: white; /* Couleur du texte */
+    font-size: 1.5em; /* Taille du texte */
+    text-align: center;
+    max-width: 400px;
+    width: 80%; /* Vous pouvez ajuster cette largeur */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+}
+
+
